@@ -1,5 +1,23 @@
+body{
+    margin:0;
+}
+
+heading {
+    margin:0;
+    padding:0;
+}
 /*Styling for the heading of the main page*/
 #main-heading {
-    size: 25rem;
+    font-size: 2.5em;
     text-align: center;
+    padding:0;
+    margin:0;
+}
+/*Styling for the heading of the heading of the quiz page. I think I'll use the same size and style.*/
+#quiz-heading {
+    font-size: 2.5em;
+    text-align: center;
+    padding:0;
+    margin:0;
+    background-color: blue;
 }
