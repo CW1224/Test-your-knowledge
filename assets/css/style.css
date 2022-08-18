@@ -23,6 +23,11 @@ h1 {
     color:white;
 }
 
+/*Styling the information section on the home page.*/
+#information {
+    text-align:center;
+}
+
 /*Styling for the heading of the heading of the quiz page. I think I'll use the same size and style.*/
 #quiz-heading {
     font-size: 2.5em;
