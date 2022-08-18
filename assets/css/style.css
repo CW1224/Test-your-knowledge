@@ -2,22 +2,22 @@ body{
     margin:0;
 }
 
-heading {
+header {
     margin:0;
     padding:0;
 }
 /*Styling for the heading of the main page*/
+/*The background should be colorful and engaging. This background captures the user's attention while still giving the title its share of attention.*/
 #main-heading {
     font-size: 2.5em;
     text-align: center;
-    padding:0;
-    margin:0;
+    width:100%;
+    height:50vh;
+    background: url() no-repeat;
 }
 /*Styling for the heading of the heading of the quiz page. I think I'll use the same size and style.*/
 #quiz-heading {
     font-size: 2.5em;
     text-align: center;
-    padding:0;
-    margin:0;
     background-color: blue;
 }
