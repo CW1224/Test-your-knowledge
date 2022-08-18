@@ -23,9 +23,41 @@ h1 {
     color:white;
 }
 
+/*Styling the navigation bar. There are only two items, the home and the quiz button. The home and quiz button will enlarge and change color when the mouse hovers over them.*/
+
+nav {
+    font-size:1.5em;
+    padding: 0.75em;
+    background-color: rgb(93, 72, 233);
+    text-align: right;
+}
+
+nav a {
+    text-decoration: none;
+    border-radius: 25%;
+    color:rgb(12, 12, 117);
+}
+
+.home-button {
+    margin: 1em;
+}
+
+.quiz-button {
+    margin:1em;
+}
+
+.home-button:hover {
+    color:rgb(23, 218, 221);
+}
+
+.quiz-button:hover{
+    color:rgb(23, 218, 221);
+}
+
 /*Styling the information section on the home page.*/
 #information {
     text-align:center;
+    font-size: 1.75em;
 }
 
 /*Styling for the heading of the heading of the quiz page. I think I'll use the same size and style.*/
