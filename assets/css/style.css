@@ -6,15 +6,23 @@ header {
     margin:0;
     padding:0;
 }
+
+h1 {
+    margin:0;
+    padding:2em;
+}
+
 /*Styling for the heading of the main page*/
 /*The background should be colorful and engaging. This background captures the user's attention while still giving the title its share of attention.*/
 #main-heading {
-    font-size: 2.5em;
+    font-size: 4em;
     text-align: center;
     width:100%;
     height:50vh;
-    background: url() no-repeat;
+    background: url('../images/hot-air-balloon.jpg') center center no-repeat;
+    color:white;
 }
+
 /*Styling for the heading of the heading of the quiz page. I think I'll use the same size and style.*/
 #quiz-heading {
     font-size: 2.5em;
