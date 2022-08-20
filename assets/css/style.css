@@ -88,7 +88,53 @@ nav a {
 /*Styling the information section on the quiz page.*/
 #information {
     position:absolute;
-    top:40%;
+    top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    font-size: 1.75em;
+    background-color: aqua;
+    padding:1em;
+    border-radius: 10px;
+    width:50%;
+}
+
+#title {
+    font-size:1.25em;
+}
+
+/*Styling the 'information.'*/
+
+.info {
+    line-height:1.5em;
+}
+
+/*Styling the buttons for the quiz: the exit and accept button below the information section.*/
+
+#buttons {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#exit-quiz {
+    font-size: 0.65em;
+    padding:5px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#begin-quiz {
+    font-size: 0.65em;
+    padding:5px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#exit-quiz:hover{
+    background-color: rgb(197, 200, 52);
+    cursor: pointer;
+}
+
+#begin-quiz:hover{
+    background-color: rgb(43, 226, 107);
+    cursor: pointer;
 }
