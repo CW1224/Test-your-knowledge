@@ -53,6 +53,10 @@ h1 {
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    padding:1em;
+    background-color: aqua;
+    border-radius: 10px;
+    width:50%;
 }
 
 /*Styling the information section.*/
@@ -60,10 +64,6 @@ h1 {
 #information {
     display: none;
     font-size: 1.75em;
-    padding:1em;
-    background-color: aqua;
-    border-radius: 10px;
-    width:50%;
 }
 
 .title {
@@ -138,7 +138,39 @@ h1 {
 
 #quiz {
     background-color: yellow;
-    width:50%;
-    border-radius:10px;
 }
 
+/*Styling the title of the question box.*/
+.ques-num {
+    font-size:2.5em;
+    font-weight: 500;
+}
+
+#quiz header {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding:0 1em 1em;
+}
+
+/*Styling the timer on the question box*/
+
+#quiz .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:30%;
+    font-size: 1.75em;
+    border:1px solid grey;
+    padding:5px;
+    border-radius: 5px;
+}
+
+.timer .timer-text {
+    font-weight: 400;
+}
+
+.timer #count-down {
+
+}
