@@ -88,53 +88,80 @@ nav a {
 /*Styling the information section on the quiz page.*/
 #information {
     position:absolute;
-    top:50%;
+    top:60%;
     left:50%;
     transform: translate(-50%,-50%);
     font-size: 1.75em;
-    background-color: aqua;
     padding:1em;
+    background-color: aqua;
     border-radius: 10px;
     width:50%;
 }
 
 #title {
     font-size:1.25em;
+    border-bottom: 1px solid black;
+    padding:0.25em 0.75em 0.75em 0.75em;
+    font-family: 'Noto+Serif+HK',sans-serif;
+    font-weight: 600;
 }
 
 /*Styling the 'information.'*/
 
 .info {
     line-height:1.5em;
+    padding:0 10px;
+}
+
+.info span {
+    font-weight: 600;
+    color:rgb(83, 83, 216);
 }
 
 /*Styling the buttons for the quiz: the exit and accept button below the information section.*/
+/*The design of the buttons was based on a youtube video. Credits given on the Readme file.*/
 
 #buttons {
-    background-color: aquamarine;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:0.5em 1.5em;
+    margin: 0;
+    border-top: 1px solid black;
 }
 
 #exit-quiz {
     font-size: 0.65em;
-    padding:5px;
-    border-radius: 10px;
-    margin: auto;
+    color:blue;
+    border-color: blue;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width:50%;
+    margin:1em 1em 0 1em;
 }
 
 #begin-quiz {
     font-size: 0.65em;
-    padding:5px;
-    border-radius: 10px;
-    margin: auto;
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    margin:1em 1em 0 1em;
 }
 
 #exit-quiz:hover{
-    background-color: rgb(197, 200, 52);
+    background-color: rgb(246, 21, 21);
+    color:white;
+    border-color: black;
     cursor: pointer;
 }
 
 #begin-quiz:hover{
-    background-color: rgb(43, 226, 107);
+    background-color: rgb(35, 236, 105);
     cursor: pointer;
+    border-color: black;
+    color: black;
 }
