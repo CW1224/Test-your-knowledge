@@ -18,22 +18,35 @@
             <h1>General Knowledge Quiz</h1>
         </header>
     </section>
-    <!--There are two main pages for this website: 1. The main page where the user first arrives at the website and 2. The place where the quiz is located.-->
-    <section>
-        <nav>
-            <a class="home-button" href="index.html" aria-label="Go back to the home page">Home</a>
-            <a class="quiz-button" href="quiz.html" aria-label="Accept the challenge">Take the Quiz</a>
-        </nav>
-    </section>
-    <!--This is going to be the introduction to the website. It will also be the only item on the first page.-->
-    <section id="provocation">
-        <h2>Ready To Test Your Knowledge?</h2>
-        <p>Are you prepared to take the brain-melting, mind-boggling, general-knowledge quiz?</p>
+        <!--This is going to be the introduction to the website. It will also be the only item on the first page.-->
+        <section id="provocation">
+            <h2>Ready To Test Your Knowledge?</h2>
+            <p>Are you prepared to take the brain-melting, mind-boggling, general-knowledge quiz?</p>
+            <br>
+            <div>
+                <button id="start-quiz">Take the Quiz</button>
+            </div>
+        </section>
+    <section id="information">
+        <div id="title">Before you start, make sure to read the information below carefully.</div>
+        <br>
+        <!--I'll decide on the time and number of questions later on in the project when I've finished the Javascript part.
+        This list will give the user an idea on what they should do during the quiz and the things they should look out for.-->
+        <div>
+            <div class="info">1. There are _____ questions in this quiz.</div>
+            <div class="info">2. You can only go onto the next question when you've answered the previous one.</div>
+            <div class="info">3. There is a limit of <span>10 seconds</span> per question.</div>
+            <div class="info">4. Remember to read the questions (and answers) carefully before picking an answer.</div>
+            <div class="info">5. Finally, enjoy the quiz.</div>
+        </div>
         <br>
         <div>
-            <button id="start-quiz">Take the Quiz</button>
+            <div id="buttons">
+                <button id="exit-quiz">Exit Quiz</button>
+                <button id="begin-quiz">Accept the Challenge</button>
+            </div>
         </div>
     </section>
+    <!--Section for questions and answers.-->
     <script src="assets/js/script.js" text="text/javascript"></script>
 </body>
-</html>
