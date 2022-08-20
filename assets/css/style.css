@@ -138,6 +138,7 @@ h1 {
 
 #quiz {
     background-color: yellow;
+    display: none;
 }
 
 /*Styling the title of the question box.*/
@@ -216,4 +217,28 @@ h1 {
 
 #quiz .question-and-text .option-list .icon-cross {
     color:blue;
+}
+
+/*Styling the footer*/
+
+#quiz footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+    padding:0 1em;
+}
+
+#quiz footer .total-question {
+    font-size: 1.25em;
+}
+
+#quiz footer .next-que {
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#quiz footer .next-que:hover {
+    background-color: blue;
 }
