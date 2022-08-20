@@ -66,3 +66,11 @@ nav a {
     text-align: center;
     background-color: blue;
 }
+
+/*Styling the countdown timer.*/
+
+#count-down {
+    font-size: 2em;
+    color:blue;
+    text-align: right;
+}

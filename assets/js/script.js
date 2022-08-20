@@ -1,3 +1,5 @@
+//This is the code for the countdown timer. The timer counts down from 10 to 0 seconds with the milliseconds showing.
+
 const startingSeconds = 10;
 let time = startingSeconds * 100;
 
@@ -14,10 +16,12 @@ function updateCountdown() {
 
     countdownEl.innerHTML = `${seconds}: ${milliseconds}`;
 
+
     if (time > 0) {
         time--;
     }
     else {
     countdownEl.innerHTML = "Time Over";
+    
     }
 }
