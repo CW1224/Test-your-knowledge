@@ -11,7 +11,6 @@ header {
 
 h1 {
     margin:0;
-    padding:2em;
     font-family:'Lobster', 'Noto+Serif+HK',sans-serif;
 }
 
@@ -24,6 +23,10 @@ h1 {
     height:50vh;
     background: url('../images/hot-air-balloon.jpg') center center no-repeat;
     color:white;
+}
+
+#main-heading > h1 {
+    padding:2em;
 }
 
 /*Styling the navigation bar. There are only two items, the home and the quiz button. The home and quiz button will change color when the mouse hovers over them.*/
@@ -79,4 +82,13 @@ nav a {
     font-size: 2.5em;
     text-align: center;
     background-color: blue;
+    padding:0;
+}
+
+/*Styling the information section on the quiz page.*/
+#information {
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
