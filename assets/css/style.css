@@ -29,11 +29,23 @@ h1 {
     padding:2em;
 }
 
+/*The heading and engaging statements should be removed once the start button is clicked.*/
+
+#main-heading.main-heading-remove {
+    display:none;
+}
+
+#provocation.provocation-none {
+    display:none;
+}
+
 /*Styling the text that engages the user*/
 #provocation {
     text-align: center;
     font-size: 2em;
 }
+
+/*Styling the start quiz button*/
 
 #start-quiz {
     font-size: 0.75em;
@@ -59,11 +71,18 @@ h1 {
     width:50%;
 }
 
+#information.activeInfo {
+    opacity:1;
+    pointer-events: auto;
+    transition-duration: 1s;
+}
+
 /*Styling the information section.*/
 
 #information {
-    display: none;
     font-size: 1.75em;
+    opacity:0;
+    pointer-events: none;
 }
 
 .title {
@@ -134,11 +153,19 @@ h1 {
     color: black;
 }
 
+/*The code below would allow the quiz questions to appear upon pressing the accept the challenge button.*/
+#quiz.quiz-active {
+    opacity:1;
+    pointer-events: auto;
+    transition-duration: 1s;
+}
+
 /*Styling the quiz box, this includes both the questions and the answers.*/
 
 #quiz {
     background-color: yellow;
-    display: none;
+    opacity:0;
+    pointer-events: none;
 }
 
 /*Styling the title of the question box.*/
