@@ -172,5 +172,48 @@ h1 {
 }
 
 .timer #count-down {
+    background-color: blue;
+}
 
+/*Styling for the question and answer section*/
+
+#quiz .question-and-text {
+    padding:0 1em;
+    line-height: 1.75em;
+}
+
+#quiz .question-and-text .question {
+    padding:1em 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+/*Styling the answers.*/
+
+#quiz .question-and-text .option-list {
+    font-size: 1.5em;
+    padding: 2em;
+}
+
+#quiz .question-and-text .option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    border:1px black solid;
+    margin-bottom: 1em;
+    padding:0.5em;
+    cursor: pointer;
+}
+
+#quiz .question-and-text .option:hover {
+    background-color: rgb(89, 89, 225);
+}
+
+#quiz .question-and-text .option-list .icon-tick {
+    color:white;
+}
+
+#quiz .question-and-text .option-list .icon-cross {
+    color:blue;
 }
