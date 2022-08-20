@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Try your hand at this pool of brain-melting questions!">
     <meta name="keyword" content="quiz brain knowledge fun unique">
+    <script src="https://kit.fontawesome.com/b1d3dda326.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Brain Melting Questions That No One Can Get 100% In</title>
@@ -28,7 +29,7 @@
             </div>
         </section>
     <section id="information">
-        <div id="title">Before you start, make sure to read the information below carefully.</div>
+        <div class="title">Before you start, make sure to read the information below carefully.</div>
         <br>
         <!--I'll decide on the time and number of questions later on in the project when I've finished the Javascript part.
         This list will give the user an idea on what they should do during the quiz and the things they should look out for.-->
@@ -47,6 +48,42 @@
             </div>
         </div>
     </section>
-    <!--Section for questions and answers.-->
+    <!--Section for questions and answers. This is the heading. This section was influenced by a youtube video.-->
+    <section id="quiz">
+        <div class="ques-num">Question 1</div>
+        <div class="timer">
+            <div class="timer-text">Time Left</div>
+            <div id="count-down">10:00</div>
+        </div>
+        <div>
+            <div class="question-and-text">
+                <span>How much is in a baker's dozen?</span>
+            </div>
+            <div class="option-list">
+                <div class="option">
+                    <span>13</span>
+                    <div class="icon-tick"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>15</span>
+                    <div class="icon-cross"><i class="fa-solid fa-circle-xmark"></i></div>
+                </div>
+                <div class="option">
+                    <span>16</span>
+                    <div class="icon-cross"><i class="fa-solid fa-circle-xmark"></i></div>
+                </div>
+                <div class="option">
+                    <span>12</span>
+                    <div class="icon-cross"><i class="fa-solid fa-circle-xmark"></i></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="total-question">
+                <span><p>2</p>Of<p>5</p></span>
+            </div>
+            <button class="next-que">Next Question</button>
+        </footer>
+    </section>
     <script src="assets/js/script.js" text="text/javascript"></script>
 </body>

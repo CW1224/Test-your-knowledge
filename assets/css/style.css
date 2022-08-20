@@ -46,14 +46,19 @@ h1 {
     background-color:rgb(0, 204, 255);
 }
 
-/*Styling the quiz page*/
+/*Styling the box in the middle of the page. This should not change position as you move through the questions.*/
 
-/*Styling the information section on the quiz page.*/
-#information {
+#information, #quiz{
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+}
+
+/*Styling the information section.*/
+
+#information {
+    display: none;
     font-size: 1.75em;
     padding:1em;
     background-color: aqua;
@@ -61,7 +66,7 @@ h1 {
     width:50%;
 }
 
-#title {
+.title {
     font-size:1.25em;
     border-bottom: 1px solid black;
     padding:0.25em 0.75em 0.75em 0.75em;
@@ -128,3 +133,12 @@ h1 {
     border-color: black;
     color: black;
 }
+
+/*Styling the quiz box, this includes both the questions and the answers.*/
+
+#quiz {
+    background-color: yellow;
+    width:50%;
+    border-radius:10px;
+}
+
