@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap');
 
 body{
     margin:0;
@@ -12,6 +12,7 @@ header {
 h1 {
     margin:0;
     padding:2em;
+    font-family:'Lobster', 'Noto+Serif+HK',sans-serif;
 }
 
 /*Styling for the heading of the main page*/
@@ -25,7 +26,7 @@ h1 {
     color:white;
 }
 
-/*Styling the navigation bar. There are only two items, the home and the quiz button. The home and quiz button will enlarge and change color when the mouse hovers over them.*/
+/*Styling the navigation bar. There are only two items, the home and the quiz button. The home and quiz button will change color when the mouse hovers over them.*/
 
 nav {
     font-size:1.5em;
@@ -54,6 +55,23 @@ nav a {
 
 .quiz-button:hover{
     color:rgb(23, 218, 221);
+}
+
+/*Styling the text on the home page.*/
+#provocation {
+    text-align: center;
+    font-size: 2em;
+}
+
+#start-quiz {
+    font-size: 0.75em;
+    padding:15px 20px;
+    border-radius: 10px;
+}
+
+#start-quiz:hover {
+    cursor:pointer;
+    background-color:rgb(0, 204, 255);
 }
 
 /*Styling for the heading of the heading of the quiz page. I think I'll use the same size and style.*/
