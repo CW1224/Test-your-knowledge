@@ -31,14 +31,20 @@ initiateButton.onclick = function() {
 //Adding in the code to give question and answer options.
 
 let queCount = 0;
-
+let quesNumber = 1;
 let nextButton = document.getElementById('next-que');
 
 //When the next button on the quiz is clicked, the following question should appear.
 
 nextButton.onclick = function() {
     if (queCount < questions.length - 1 ){
-        queCount ++;
+        //Increasing the number on the footer of the quiz page as the next question button is pressed.
+        quesNumber++;
+        let quesNum = document.getElementById('total-question');
+        let quesText = '<span><p>' + quesNumber + ' Of 5' + '</p></span>';
+        quesNum.innerHTML = quesText;
+
+        queCount++;
         showQuestions(queCount);
     } else {
         console.log('Quiz complete');
@@ -57,6 +63,7 @@ function showQuestions(index) {
     choices.innerHTML = optionList;
 }
 
+//This is the code to indicate the question number the user is on.
 
 //This is the code for the countdown timer. The timer counts down from 10 to 0 seconds with the milliseconds showing.
 
