@@ -55,15 +55,32 @@ function showQuestions(index) {
     let queTitle = document.getElementById('question');
     let queTag = '<span>' + questions[index].number + '. ' + questions[index].question + '</span>';
     let choices = document.getElementById('option-list');
-    let optionList = '<div class="option"><span>' + questions[index].options[0] + '</span><div class="icon-tick"><i class="fa-solid fa-circle-check"></i></div></div>'
-                + '<div class="option"><span>' + questions[index].options[1] + '</span><div class="icon-tick"><i class="fa-solid fa-circle-check"></i></div></div>' 
-                + '<div class="option"><span>' + questions[index].options[2] + '</span><div class="icon-tick"><i class="fa-solid fa-circle-check"></i></div></div>'
-                + '<div class="option"><span>' + questions[index].options[3] + '</span><div class="icon-tick"><i class="fa-solid fa-circle-check"></i></div></div>';
+    let optionList = '<div class="option"><span>' + questions[index].options[0] + '</span></div>'
+                + '<div class="option"><span>' + questions[index].options[1] + '</span></div>' 
+                + '<div class="option"><span>' + questions[index].options[2] + '</span></div>'
+                + '<div class="option"><span>' + questions[index].options[3] + '</span></div>';
     queTitle.innerHTML = queTag;
     choices.innerHTML = optionList;
+
+    const option = document.getElementsByClassName('option')
+    for (let i = 0; i < option.length; i++) {
+        option[i].setAttribute('onclick','optionSelected(this)');
+    }
 }
 
-//This is the code to indicate the question number the user is on.
+//This is the code to let user check if they got the correct answer or not. This block of code is taken from a youtube video. I made some modification to it so that it can be used in my quiz.
+
+function optionSelected(correctAns) {
+    let userAns = correctAns.textContent;
+    let correctAnswer = questions[queCount].correctAns;
+    if (userAns == correctAnswer) {
+        correctAns.classList.add ('tick');
+        console.log("Well done");
+    } else {
+        correctAns.classList.add ('cross');
+        console.log("Too bad");
+    }
+}
 
 //This is the code for the countdown timer. The timer counts down from 10 to 0 seconds with the milliseconds showing.
 

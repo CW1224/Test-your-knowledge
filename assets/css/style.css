@@ -200,7 +200,7 @@ h1 {
 }
 
 .timer #count-down {
-    background-color: blue;
+    background-color: white;
 }
 
 /*Styling for the question and answer section*/
@@ -227,7 +227,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: red;
+    background-color: white;
     border:1px black solid;
     margin-bottom: 1em;
     padding:0.5em;
@@ -235,15 +235,27 @@ h1 {
 }
 
 #quiz .question-and-text .option:hover {
-    background-color: rgb(89, 89, 225);
+    background-color: aqua;
 }
 
 #quiz .question-and-text .option-list .icon-tick {
-    color:white;
+    color: green;
 }
 
 #quiz .question-and-text .option-list .icon-cross {
-    color:blue;
+    color:red ;
+}
+
+.option.tick {
+    color:green;
+    border-color: green;
+    background-color: greenyellow;
+}
+
+.option.cross {
+    color:red;
+    border-color: red;
+    background-color: rgb(223, 135, 135);
 }
 
 /*Styling the footer*/
