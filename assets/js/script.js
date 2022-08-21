@@ -25,7 +25,38 @@ exitButton.onclick = function() {
 initiateButton.onclick = function() {
     information.classList.remove("activeInfo"); //removes the information section
     quiz.classList.add('quiz-active');
+    showQuestions(0);
 }
+
+//Adding in the code to give question and answer options.
+
+let queCount = 0;
+
+let nextButton = document.getElementById('next-que');
+
+//When the next button on the quiz is clicked, the following question should appear.
+
+nextButton.onclick = function() {
+    if (queCount < questions.length - 1 ){
+        queCount ++;
+        showQuestions(queCount);
+    } else {
+        console.log('Quiz complete');
+    }
+}
+
+function showQuestions(index) {
+    let queTitle = document.getElementById('question');
+    let queTag = '<span>' + questions[index].number + '. ' + questions[index].question + '</span>';
+    let choices = document.getElementById('option-list');
+    let optionList = '<div class="option"><span>' + questions[index].options[0] + '</span><div class="icon-tick"><i class="fa-solid fa-circle-check"></i></div></div>'
+                + '<div class="option"><span>' + questions[index].options[1] + '</span><div class="icon-tick"><i class="fa-solid fa-circle-check"></i></div></div>' 
+                + '<div class="option"><span>' + questions[index].options[2] + '</span><div class="icon-tick"><i class="fa-solid fa-circle-check"></i></div></div>'
+                + '<div class="option"><span>' + questions[index].options[3] + '</span><div class="icon-tick"><i class="fa-solid fa-circle-check"></i></div></div>';
+    queTitle.innerHTML = queTag;
+    choices.innerHTML = optionList;
+}
+
 
 //This is the code for the countdown timer. The timer counts down from 10 to 0 seconds with the milliseconds showing.
 

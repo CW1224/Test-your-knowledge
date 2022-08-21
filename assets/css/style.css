@@ -210,7 +210,7 @@ h1 {
     line-height: 1.75em;
 }
 
-#quiz .question-and-text .question {
+#quiz .question-and-text #question {
     padding:1em 0;
     font-size: 2em;
     text-align: center;
@@ -218,7 +218,7 @@ h1 {
 
 /*Styling the answers.*/
 
-#quiz .question-and-text .option-list {
+#quiz .question-and-text #option-list {
     font-size: 1.5em;
     padding: 2em;
 }
@@ -256,17 +256,17 @@ h1 {
     padding:0 1em;
 }
 
-#quiz footer .total-question {
+#quiz footer #total-question {
     font-size: 1.25em;
 }
 
-#quiz footer .next-que {
+#quiz footer #next-que {
     font-size: 1.5em;
     padding: 10px;
     cursor: pointer;
 }
 
-#quiz footer .next-que:hover {
+#quiz footer #next-que:hover {
     background-color: blue;
 }
 
