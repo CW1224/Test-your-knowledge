@@ -32,6 +32,7 @@ initiateButton.onclick = function() {
 
 let queCount = 0;
 let quesNumber = 1;
+let rightAnswer = 0;
 let nextButton = document.getElementById('next-que');
 
 //When the next button on the quiz is clicked, the following question should appear.
@@ -74,8 +75,10 @@ function optionSelected(correctAns) {
     let userAns = correctAns.textContent;
     let correctAnswer = questions[queCount].correctAns;
     if (userAns == correctAnswer) {
+        rightAnswer++;
         correctAns.classList.add ('tick');
         console.log("Well done")
+        console.log(rightAnswer);
     } else {
         correctAns.classList.add ('cross');
        console.log("Too bad")
