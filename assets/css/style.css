@@ -234,6 +234,18 @@ h1 {
     cursor: pointer;
 }
 
+#quiz div.option.tick {
+    color:green;
+    border-color: green;
+    background-color: greenyellow;
+}
+
+#quiz div.option.cross {
+    color:red;
+    border-color: red;
+    background-color: rgb(223, 135, 135);
+}
+
 #quiz .question-and-text .option:hover {
     background-color: aqua;
 }
@@ -243,19 +255,7 @@ h1 {
 }
 
 #quiz .question-and-text .option-list .icon-cross {
-    color:red ;
-}
-
-.option.tick {
-    color:green;
-    border-color: green;
-    background-color: greenyellow;
-}
-
-.option.cross {
-    color:red;
-    border-color: red;
-    background-color: rgb(223, 135, 135);
+    color: red ;
 }
 
 /*Styling the footer*/

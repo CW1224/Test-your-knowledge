@@ -75,10 +75,10 @@ function optionSelected(correctAns) {
     let correctAnswer = questions[queCount].correctAns;
     if (userAns == correctAnswer) {
         correctAns.classList.add ('tick');
-        console.log("Well done");
+        console.log("Well done")
     } else {
         correctAns.classList.add ('cross');
-        console.log("Too bad");
+       console.log("Too bad")
     }
 }
 
