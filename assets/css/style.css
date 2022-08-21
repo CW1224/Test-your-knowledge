@@ -258,6 +258,10 @@ h1 {
     color: red ;
 }
 
+#quiz .question-and-text .option.disabled {
+    pointer-events: none;
+}
+
 /*Styling the footer*/
 
 #quiz footer {

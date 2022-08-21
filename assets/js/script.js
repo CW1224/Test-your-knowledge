@@ -6,6 +6,8 @@ const information = document.getElementById('information');
 const exitButton = document.getElementById('exit-quiz');
 const initiateButton = document.getElementById('begin-quiz');
 const quiz = document.getElementById('quiz');
+let choices = document.getElementById('option-list');
+const option = document.getElementsByClassName('option')
 
 //This is the code that will bring the user to the quiz information page after pressing the start button.
 startButton.onclick = function() {
@@ -55,7 +57,6 @@ nextButton.onclick = function() {
 function showQuestions(index) {
     let queTitle = document.getElementById('question');
     let queTag = '<span>' + questions[index].number + '. ' + questions[index].question + '</span>';
-    let choices = document.getElementById('option-list');
     let optionList = '<div class="option"><span>' + questions[index].options[0] + '</span></div>'
                 + '<div class="option"><span>' + questions[index].options[1] + '</span></div>' 
                 + '<div class="option"><span>' + questions[index].options[2] + '</span></div>'
@@ -63,7 +64,6 @@ function showQuestions(index) {
     queTitle.innerHTML = queTag;
     choices.innerHTML = optionList;
 
-    const option = document.getElementsByClassName('option')
     for (let i = 0; i < option.length; i++) {
         option[i].setAttribute('onclick','optionSelected(this)');
     }
@@ -74,6 +74,7 @@ function showQuestions(index) {
 function optionSelected(correctAns) {
     let userAns = correctAns.textContent;
     let correctAnswer = questions[queCount].correctAns;
+    let allOptions = option.length;
     if (userAns == correctAnswer) {
         rightAnswer++;
         correctAns.classList.add ('tick');
@@ -83,7 +84,16 @@ function optionSelected(correctAns) {
         correctAns.classList.add ('cross');
        console.log("Too bad")
     }
+
+    //This is the code that will prevent the user from picking any other question once once answer is picked.
+
+    for (let i = 0; i < allOptions; i++) {
+        option[i].classList.add('disabled');
+    }
 }
+
+
+
 
 //This is the code for the countdown timer. The timer counts down from 10 to 0 seconds with the milliseconds showing.
 
