@@ -47,6 +47,13 @@ nextButton.onclick = function() {
         let quesText = '<span><p>' + quesNumber + ' Of 5' + '</p></span>';
         quesNum.innerHTML = quesText;
 
+        if (time > 0) {
+            time--;
+        }
+        else {
+        countdownEl.innerHTML = "Time Over";
+        }
+
         queCount++;
         showQuestions(queCount);
     } else {
@@ -71,6 +78,9 @@ function showQuestions(index) {
 
 //This is the code to let user check if they got the correct answer or not. This block of code is taken from a youtube video. I made some modification to it so that it can be used in my quiz.
 
+let checkIcon = '<div class="icon-tick"><i class="fa-solid fa-circle-check"></i></div>';
+let crossIcon = '<div class="icon-cross"><i class="fa-solid fa-circle-xmark"></i></div>';
+
 function optionSelected(correctAns) {
     let userAns = correctAns.textContent;
     let correctAnswer = questions[queCount].correctAns;
@@ -78,22 +88,21 @@ function optionSelected(correctAns) {
     if (userAns == correctAnswer) {
         rightAnswer++;
         correctAns.classList.add ('tick');
+        correctAns.insertAdjacentHTML("beforeend", checkIcon);
         console.log("Well done")
         console.log(rightAnswer);
     } else {
         correctAns.classList.add ('cross');
-       console.log("Too bad")
+        correctAns.insertAdjacentHTML("beforeend", crossIcon);
+        console.log("Too bad")
     }
 
-    //This is the code that will prevent the user from picking any other question once once answer is picked.
+    //This is the code that will prevent the user from picking any other question once an answer is picked.
 
     for (let i = 0; i < allOptions; i++) {
         option[i].classList.add('disabled');
     }
 }
-
-
-
 
 //This is the code for the countdown timer. The timer counts down from 10 to 0 seconds with the milliseconds showing.
 
@@ -112,13 +121,4 @@ function updateCountdown() {
     milliseconds = milliseconds < 10 ? '0' + milliseconds : milliseconds;
 
     countdownEl.innerHTML = `${seconds}: ${milliseconds}`;
-
-
-    if (time > 0) {
-        time--;
-    }
-    else {
-    countdownEl.innerHTML = "Time Over";
-    
-    }
 }
