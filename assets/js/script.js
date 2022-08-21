@@ -47,13 +47,6 @@ nextButton.onclick = function() {
         let quesText = '<span><p>' + quesNumber + ' Of 5' + '</p></span>';
         quesNum.innerHTML = quesText;
 
-        if (time > 0) {
-            time--;
-        }
-        else {
-        countdownEl.innerHTML = "Time Over";
-        }
-
         queCount++;
         showQuestions(queCount);
     } else {
@@ -121,4 +114,10 @@ function updateCountdown() {
     milliseconds = milliseconds < 10 ? '0' + milliseconds : milliseconds;
 
     countdownEl.innerHTML = `${seconds}: ${milliseconds}`;
+    if (time > 0) {
+        time--;
+    }
+    else {
+    countdownEl.innerHTML = "Time Over";
+    }
 }
