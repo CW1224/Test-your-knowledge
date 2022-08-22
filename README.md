@@ -236,6 +236,7 @@ TEST            | OUTCOME                          | PASS / FAIL
 Start Quiz Button | When hovered over, background-color of button turns orange. | Pass
 Exit Quiz Button | When hovered over, background-color of button turns red. | Pass
 Accept Challenge Button | When hovered over, background-color of button turns green. | Pass
+Options | When hovered over, the background-color changes to pale yellow | Pass
 Next Question Button | When hovered over, background-color of button turns yellow-green. | Pass
 Leave Quiz Button | When hovered over, background-color of button turns red. | Pass
 Restart Quiz Button | When hovered over, background-color of button turns green. | Pass
