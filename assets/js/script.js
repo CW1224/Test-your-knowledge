@@ -13,6 +13,7 @@ const countdownEl = document.getElementById('count-down');
 const results = document.getElementById('results');
 const restartButton = document.getElementById('restart-quiz');
 const leaveButton = document.getElementById('quit-quiz');
+let finalResults = document.getElementById('score');
 
 //This is the code that will bring the user to the quiz information page after pressing the start button.
 startButton.onclick = function() {
@@ -31,7 +32,7 @@ exitButton.onclick = function() {
 //This is the code that would bring the user to the first question of the quiz when pressed.
 initiateButton.onclick = function() {
     information.classList.remove("activeInfo"); //removes the information section
-    quiz.classList.add('activeInfo');
+    quiz.classList.add('activeQuiz');
     showQuestions(0);
     updateCountdown(9);
 }
@@ -142,3 +143,10 @@ function updateCountdown(time) {
 }
 
 //The results section
+
+function showResults() {
+    quiz.classList.remove('activeQuiz');
+    results.classList.add('activeResults');
+    let endResults ='<span>' + "You're score is" + '<p>' + rightAnswer +'</p>' + 'out of' + '<p>10</p></span>'; 
+    finalResults.innerHTML = endResults;
+}

@@ -74,7 +74,7 @@ h1 {
 /*The code below would allow the information to pop up when the start button is pressed, the quiz question to pop up when
 accept button is pressed and the results button to pop up when the final answer is anaswered.*/
 
-#information.activeInfo, #results.activeInfo, #quiz.activeInfo {
+#information.activeInfo, #results.activeResults, #quiz.activeQuiz{
     opacity:1;
     pointer-events: auto;
     transition-duration: 1s;
@@ -291,7 +291,8 @@ accept button is pressed and the results button to pop up when the final answer 
     text-align: center;
     align-items: center;
     flex-direction: column;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 
 #results .congrats {
@@ -304,16 +305,16 @@ accept button is pressed and the results button to pop up when the final answer 
     padding:0 0 1em;
 }
 
-#results .score {
+#results #score {
     padding:0 0 1em;
 }
 
-#results .score span {
+#results #score span {
     display:flex;
     padding:0;
 }
 
-#results .score span p {
+#results #score span p {
     margin:0;
     padding:0 0.3em;
 }
