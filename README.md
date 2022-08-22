@@ -4,6 +4,8 @@ Welcome to the readme file of my project.
 
 ## Introduction
 
+This website is designed to test users on their general knowledge. The types of questions range from geographical locations and landmarks to historical people and famous events. By completing this quiz, users would be able to broaden their perspective of the world.
+
 You can find a link to my website [here]()
 
 # Table of Contents
@@ -35,6 +37,8 @@ You can find a link to my website [here]()
 ## 1.1 User Goals
 
 [Return to the Table of Contents](#table-of-contents)
+
+My goal in creating this website is to broaden people's horizon. I want to either inform or reinforce their knowledge on different topics. The questions in this quiz would do just that. These questions test the user's knowledge of our solar system, the human history, geographical locations, our homeland, planet Earth and much more.
 
 ## 1.2 User Expectations
 
