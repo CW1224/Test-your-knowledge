@@ -207,14 +207,35 @@ If the user gets more than twenty questions correct, the statement below will sh
 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
+Start Quiz Button | When clicked, brings user to information page. | Pass
 
-### 4.1.4 Website Analysis on a Desktop using Lighthouse
+### 4.1.2 Hover
+
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+
+### 4.1.3 Options Clicked
+
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+
+### 4.1.4 Timer
+
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+
+### 4.1.5 Results
+
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+
+### 4.1.6 Website Analysis on a Desktop using Lighthouse
 
 The performance of my website is pretty good on the desktop browser. this can be improved by reducing the size of the background-images.
 
 ![Lighthouse 1](/assets/screenshots/lighthouse-desktop.png)
 
-### 4.1.5 Website Analysis on a Mobile using Lighthouse
+### 4.1.7 Website Analysis on a Mobile using Lighthouse
 
 The performance of my website is mediocre on the mobile version. By reduciing the size of the background images, the performance would definitely increase.
 
