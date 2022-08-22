@@ -203,19 +203,21 @@ If the user gets more than twenty questions correct, the statement below will sh
 
 ## 4.1 Manual Testing
 
-### 4.1.1 Navigation Bar Test for All Three Web Pages
+### 4.1.1 Buttons for All Sections
 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 
 ### 4.1.4 Website Analysis on a Desktop using Lighthouse
 
-The performance of my website is pretty good on the desktop browser.
+The performance of my website is pretty good on the desktop browser. this can be improved by reducing the size of the background-images.
+
 ![Lighthouse 1](/assets/screenshots/lighthouse-desktop.png)
 
 ### 4.1.5 Website Analysis on a Mobile using Lighthouse
 
-The performance of my website is pretty good on the desktop browser.
+The performance of my website is mediocre on the mobile version. By reduciing the size of the background images, the performance would definitely increase.
+
 ![Lighthouse 2](/assets/screenshots/lighthouse-mobile.png)
 
 ## 4.2 Testing with Tools
@@ -318,6 +320,7 @@ This is the mobile version of the website.
 * The hover effect on the mobile app should be removed so that the background-color of the option would turn green or red depending on whether the answer is correct or not instead of turning yellow and then turning its corresponding color on the second click.
 * The background image of each question can be different.
 * The timer should not have a lag when the next question button is pressed. It should immediately be 10 istead of staying on the time it was before for a second before changing.
+* Changing the size of the background image on the mobile version would definitely reduce its loading time and increasing its performance levels.
 
 # 9. Acknowledgements
 
