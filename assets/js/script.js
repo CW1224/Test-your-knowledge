@@ -41,6 +41,7 @@ exitButton.onclick = function() {
     heading.classList.remove("main-heading-remove");
     initialInformation.classList.remove("provocation-none");
     color.classList.remove("color");
+    color.classList.remove("background");
 };
 
 //This is the code that would bring the user to the first question of the quiz when pressed.
