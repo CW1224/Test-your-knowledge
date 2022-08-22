@@ -28,8 +28,8 @@
                 <button id="start-quiz">Take the Quiz</button>
             </div>
     </section>
-    <section id="information">
-        <h2 class="title">Before you start, make sure to read the information below carefully.</h2>
+    <div id="information">
+        <div class="title">Before you start, make sure to read the information below carefully.</div>
         <!--I'll decide on the time and number of questions later on in the project when I've finished the Javascript part.
         This list will give the user an idea on what they should do during the quiz and the things they should look out for.-->
         <div>
@@ -46,9 +46,9 @@
                 <button id="begin-quiz">Accept the Challenge</button>
             </div>
         </div>
-    </section>
+    </div>
     <!--Section for questions and answers. This is the heading.-->
-    <section id="quiz">
+    <div id="quiz">
         <header>
             <div class="ques-num">General Knowledge</div>
             <div class="timer">
@@ -71,22 +71,20 @@
             </div>
             <button id="next-que">Next Question</button>
         </footer>
-    </section>
+    </div>
     <!--This is the result box.-->
-    <section>
-        <div id="results">
-            <div class="congrats"><i class="fa-solid fa-ranking-star"></i></div>
-            <div class="complete-test">Congratulations on finishing the Quiz!</div>
-            <div id="final-message"></div>
-            <div id="score">
-                <!--The score would be displayed here-->
-            </div>
-            <div id="press">
-                <button id="restart-quiz">Restart Quiz</button>
-                <button id="quit-quiz">Leave</button>
-            </div>
+    <div id="results">
+        <div class="congrats"><i class="fa-solid fa-ranking-star"></i></div>
+        <div class="complete-test">Congratulations on finishing the Quiz!</div>
+        <div id="final-message"></div>
+        <div id="score">
+            <!--The score would be displayed here-->
         </div>
-    </section>
+        <div id="press">
+           <button id="restart-quiz">Restart Quiz</button>
+            <button id="quit-quiz">Leave</button>
+        </div>
+    </div>
     <script src="assets/js/script.js" text="text/javascript"></script>
     <script src="assets/js/questions.js" text="text/javascript"></script>
 </body>
