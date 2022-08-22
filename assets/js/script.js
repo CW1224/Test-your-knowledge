@@ -148,16 +148,18 @@ function showResults() {
     quiz.classList.remove('activeQuiz');
     results.classList.add('activeResults');
 
-    if (0 < rightAnswer < 3) {
-        finalMessage.innerHTML = 'Excellent! Your knowledge of the world is incomparable.';
-    } else if (0 < rightAnswer < 3) {
-        finalMessage.innerHTML = "Amazing! You're nearly there. ";
-    } else if (0 < rightAnswer < 3) {
-        finalMessage.innerHTML = 'Really Good! However, you could do with a little more studying.';
-    } else if (0 < rightAnswer < 3) {
-        finalMessage.innerHTML = "Mediocre! Widen up you're ";
-    } else {
+    //This code will display a different message on the user's final screen depending on the number of answers they answered correctly.
+
+    if (rightAnswer < 2) {
         finalMessage.innerHTML = 'Uhm... You should take a look at the world outside.';
+    } else if (rightAnswer < 3) {
+        finalMessage.innerHTML = "Mediocre! Widen up you're ";
+    } else if (rightAnswer < 4) {
+        finalMessage.innerHTML = 'Really Good! However, you could do with a little more studying.';
+    } else if (rightAnswer < 5) {
+        finalMessage.innerHTML = "Amazing! You're nearly there. ";
+    } else {
+        finalMessage.innerHTML = 'Excellent! Your knowledge of the world is incomparable.';
     }
 
     let endResults ='<span>' + "You're score is" + '<p>' + rightAnswer +'</p>' + 'out of' + '<p>20</p></span>'; 
@@ -172,6 +174,7 @@ leaveButton.onclick = function() {
     initialInformation.classList.remove("provocation-none");
     queCount = 0;
     quesNumber = 1;
+    rightAnswer = 0;
 }
 
 //This is the code that would allow the user to redo the quiz upon clicking.
@@ -181,4 +184,5 @@ restartButton.onclick = function() {
     information.classList.add("activeInfo");
     queCount = 0;
     quesNumber = 1;
+    rightAnswer = 0;
 }
