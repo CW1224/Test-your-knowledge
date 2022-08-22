@@ -80,7 +80,7 @@ let questions = [
     },
     {
         number:8,
-        question:"What color flame is the hottest",
+        question:"What color flame is the hottest?",
         correctAns:"Blue",
         options: [
             "Orange",

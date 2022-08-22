@@ -71,7 +71,6 @@ nextButton.onclick = function() {
         queCount++;
         showQuestions(queCount);
     } else {
-        console.log('Quiz complete');
         showResults();
     }
 }
@@ -105,12 +104,9 @@ function optionSelected(correctAns) {
         rightAnswer++;
         correctAns.classList.add ('tick');
         correctAns.insertAdjacentHTML("beforeend", checkIcon);
-        console.log("Well done");
-        console.log(rightAnswer);
     } else {
         correctAns.classList.add ('cross');
         correctAns.insertAdjacentHTML("beforeend", crossIcon);
-        console.log("Too bad");
     }
 
     //This is the code that will prevent the user from picking any other question once an answer is picked.
