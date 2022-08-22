@@ -37,10 +37,6 @@ initiateButton.onclick = function() {
     updateCountdown(9);
 }
 
-//This is the code that would show the user his/her results.
-
-
-
 //Adding in the code to give question and answer options.
 
 let queCount = 0;
@@ -149,4 +145,23 @@ function showResults() {
     results.classList.add('activeResults');
     let endResults ='<span>' + "You're score is" + '<p>' + rightAnswer +'</p>' + 'out of' + '<p>10</p></span>'; 
     finalResults.innerHTML = endResults;
+}
+
+//This is the code that would allow the user to go back to the main page upon clicking.
+
+leaveButton.onclick = function() {
+    results.classList.remove('activeResults');
+    heading.classList.remove("main-heading-remove");
+    initialInformation.classList.remove("provocation-none");
+    queCount = 0;
+    quesNumber = 1;
+}
+
+//This is the code that would allow the user to redo the quiz upon clicking.
+
+restartButton.onclick = function() {
+    results.classList.remove('activeResults');
+    information.classList.add("activeInfo");
+    queCount = 0;
+    quesNumber = 1;
 }

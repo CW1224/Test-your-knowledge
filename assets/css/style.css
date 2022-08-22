@@ -246,16 +246,16 @@ accept button is pressed and the results button to pop up when the final answer 
     background-color: aqua;
 }
 
+#quiz .question-and-text .option.disabled {
+    pointer-events: none;
+}
+
 #quiz .question-and-text .option-list .icon-tick {
     color: green;
 }
 
 #quiz .question-and-text .option-list .icon-cross {
     color: red ;
-}
-
-#quiz .question-and-text .option.disabled {
-    pointer-events: none;
 }
 
 /*Styling the footer*/
@@ -303,6 +303,11 @@ accept button is pressed and the results button to pop up when the final answer 
 #results .complete-test {
     font-size: 1.5em;
     padding:0 0 1em;
+}
+
+#result #final-message {
+    padding-bottom: 1em;
+    font-size: 1.25em;
 }
 
 #results #score {
