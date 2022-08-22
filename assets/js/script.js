@@ -156,7 +156,7 @@ function showResults() {
     if (rightAnswer < 6) {
         finalMessage.innerHTML = 'Uhm... You should take a look at the world outside.';
     } else if (rightAnswer < 11) {
-        finalMessage.innerHTML = "Mediocre! Widen up you're ";
+        finalMessage.innerHTML = "Mediocre! Widen up you're view.";
     } else if (rightAnswer < 16) {
         finalMessage.innerHTML = 'Really Good! However, you could do with a little more studying.';
     } else if (rightAnswer < 21) {

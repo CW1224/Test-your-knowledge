@@ -5,7 +5,7 @@ body{
 }
 
 body.color{
-    background-color: rgb(53, 198, 238);
+    background-color: rgb(108, 215, 244);
 }
 
 header {
@@ -70,7 +70,7 @@ h1 {
     left:50%;
     transform: translate(-50%,-50%);
     padding:1em;
-    background-color: aqua;
+    background-color: white;
     border-radius: 10px;
     width:50%;
 }
@@ -163,7 +163,7 @@ accept button is pressed and the results button to pop up when the final answer 
 /*Styling the quiz box, this includes both the questions and the answers.*/
 
 #quiz {
-    background-color: yellow;
+    background-color: white;
     opacity:0;
     pointer-events: none;
 }
@@ -171,7 +171,8 @@ accept button is pressed and the results button to pop up when the final answer 
 /*Styling the title of the question box.*/
 .ques-num {
     font-size:2.5em;
-    font-weight: 500;
+    font-weight: 700;
+    font-family: 'Lobster',sans-serif;
 }
 
 #quiz header {
@@ -190,17 +191,19 @@ accept button is pressed and the results button to pop up when the final answer 
     justify-content: space-between;
     width:30%;
     font-size: 1.75em;
-    border:1px solid grey;
+    border:2px solid ;
+    background-color: rgb(8, 0, 255);
     padding:5px;
     border-radius: 5px;
 }
 
 .timer .timer-text {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .timer #count-down {
     background-color: white;
+    padding:10px;
 }
 
 /*Styling for the question and answer section*/
@@ -228,7 +231,8 @@ accept button is pressed and the results button to pop up when the final answer 
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    border:1px black solid;
+    border:2px black solid;
+    border-radius:5px;
     margin-bottom: 1em;
     padding:0.5em;
     cursor: pointer;
@@ -236,14 +240,14 @@ accept button is pressed and the results button to pop up when the final answer 
 
 #quiz div.option.tick {
     color:green;
-    border-color: green;
+    border:2px solid green;
     background-color: greenyellow;
 }
 
 #quiz div.option.cross {
-    color:red;
-    border-color: red;
-    background-color: rgb(223, 135, 135);
+    color:rgb(255, 0, 0);
+    border:2px solid rgb(255, 0, 0);
+    background-color: pink;
 }
 
 #quiz .question-and-text .option:hover {
@@ -268,8 +272,8 @@ accept button is pressed and the results button to pop up when the final answer 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: green;
     padding:0 1em;
+    border-top: 1px solid black;
 }
 
 #quiz footer #total-question {
@@ -280,11 +284,13 @@ accept button is pressed and the results button to pop up when the final answer 
     display: none;
     font-size: 1.5em;
     padding: 10px;
+    margin:0.4em 0 0;
     cursor: pointer;
+    background-color: rgb(151, 151, 164);
 }
 
 #quiz footer #next-que:hover {
-    background-color: blue;
+    background-color: rgb(166, 166, 254);
 }
 
 /*Styling the end result page.*/
