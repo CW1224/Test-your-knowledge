@@ -5,14 +5,17 @@ body{
 }
 
 body.color{
+    transition-duration: 1s;
     background: url(../images/fall.jpg);
 }
 
 body.background {
+    transition-duration: 1s;
     background: url(../images/autumn.jpg);
 }
 
 body.firework-background {
+    transition-duration: 1s;
     background: url(../images/fireworks.jpg);
 }
 
@@ -216,6 +219,8 @@ accept button is pressed and the results button to pop up when the final answer 
     padding:10px;
 }
 
+/*Styling the actual question and answer options*/
+
 #quiz .question-and-text {
     padding:0 1em;
     line-height: 1.75em;
@@ -386,4 +391,62 @@ accept button is pressed and the results button to pop up when the final answer 
     background-color: rgb(246, 21, 21);
     color:white;
     border-color: black;
+}
+
+/*The timer is the only thing that has to be changed when the screen is less than 1200px*/
+@media screen and (max-width:1200px) {
+    #quiz .timer {
+        width:30%;
+    }
+}
+
+/*The website changes when the screen is less than 450px in width*/
+@media screen and (max-width:450px) {
+
+    /*The styling for the background*/
+
+    #main-heading {
+        font-size: 2em;
+        display: flex;
+        align-items:flex-end;
+        padding-bottom: 1em;
+    }
+
+    #main-heading > h1 {
+        padding:0;
+    }
+
+    /*Styling the text that engages the user*/
+    #provocation {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    /*Styling the box in the middle of the page. This should not change position as you move through the questions.*/
+
+    #information, #quiz, #results{
+        width:100%;
+        padding:0;
+    }
+    
+    /*Styling the information section.*/
+
+    .title {
+        font-size:1em;
+        padding:0.25em;
+    }
+
+    /*Styling the timer.*/
+
+    #quiz .timer {
+        width:40%;
+        font-size: 1.25em;
+        border:1px solid rgb(12, 81, 12);
+        padding:0.1em;
+    }
+
+    .timer #count-down {
+        border-radius: 1px;
+        padding:2px;
+    }
 }
