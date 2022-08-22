@@ -179,7 +179,7 @@ let questions = [
     },
     {
         number:17,
-        question:"What was the name of the first atomic dropped in warfare?",
+        question:"What was the name of the first atomic bomb dropped in warfare?",
         correctAns:"Little Boy",
         options: [
             "Bockscar",
