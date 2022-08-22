@@ -87,7 +87,7 @@ h1 {
 }
 
 /*The code below would allow the information to pop up when the start button is pressed, the quiz question to pop up when
-accept button is pressed and the results button to pop up when the final answer is anaswered.*/
+accept button is pressed and the results button to pop up when the final answer is answered.*/
 
 #information.activeInfo, #results.activeResults, #quiz.activeQuiz{
     opacity:1;
@@ -124,7 +124,7 @@ accept button is pressed and the results button to pop up when the final answer 
 }
 
 /*Styling the buttons for the quiz: the exit and accept button below the information section.*/
-/*The design of the buttons was based on a youtube video. Credits given on the Readme file.*/
+/*The design of the buttons was based on a youtube video but I modified the code to suit my needs. Credits given on the Readme file.*/
 
 #buttons {
     display: flex;
@@ -219,7 +219,7 @@ accept button is pressed and the results button to pop up when the final answer 
     padding:10px;
 }
 
-/*Styling the actual question and answer options*/
+/*Styling the actual question.*/
 
 #quiz .question-and-text {
     padding:0 1em;
@@ -448,5 +448,63 @@ accept button is pressed and the results button to pop up when the final answer 
     .timer #count-down {
         border-radius: 1px;
         padding:2px;
+    }
+
+    /*Styling the actual question.*/
+
+    #quiz .question-and-text #question {
+        font-size: 1.5em;
+    }
+
+    /*Styling the answers. The correct answer and wrong answer wil display a different style.*/
+
+    #quiz .question-and-text #option-list {
+        font-size: 1.25em;
+        padding:0 1.5em 1.5em;
+    }
+
+    /*Styling the footer*/
+
+    #quiz footer #next-que {
+        font-size: 1em;
+        padding: 7px;
+        margin:0.4em 0 0.4em;
+    }
+
+    /*Styling the end result page.*/
+
+    #results {
+        font-size: 1em;
+    }
+
+    #results .congrats {
+        font-size: 4em;
+        margin:0.75em;
+    }
+
+    #results .complete-test {
+        font-size: 1.5em;
+    }
+
+    #result #final-message {
+        font-size: 1.5em;
+    }
+
+    /*Styling the buttons that appear on the result page.*/
+
+    #results #press{
+        padding:0;
+    }
+
+    #results #press button {
+        font-size:0.75em;
+    }
+
+    #results #press #restart-quiz {
+        margin:0.5em 0;
+    }
+
+    #results #press #quit-quiz {
+        margin:0.5em 0;
     }
 }
