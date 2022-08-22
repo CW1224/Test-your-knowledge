@@ -116,37 +116,47 @@ Invision was used to create the webframe and to brainstorm my ideas. I created e
 
 The buttons on each section are similar in their uses and design. They are used to bring the user to different sections of the quiz.
 The first button as seen below brings the user to the information page. When hovered over, it turns orange in color.
+
 ![Start Button Hovered](/assets/screenshots/hover-1.png)
 
 The accept challenge button on the information page as seen below brings the user to the first question on the quiz page. When hovered over, it turns green in color.
+
 ![Accept Challenge Button Hovered](/assets/screenshots/hover-2.png)
 
 The exit button on the information page as seen below brings the user back to the initial page. When hovered over, it turns red in color.
+
 ![Exit Button Hovered](/assets/screenshots/hover-3.png)
 
 The next button on each of the questions of the quiz page as seen below brings the user to the following question. When hovered over, it turns a yellow-green color.
+
 ![Next Button Hovered](/assets/screenshots/hover-5.png)
 
 The restart quiz button on the results page as seen below brings the user back to the information page. When hovered over, it turns green in color.
+
 ![Restart Button Hovered](/assets/screenshots/hover-6.png)
 
 The leave button on the results page as seen below brings the user to the information page. When hovered over, it turns red in color.
+
 ![Leave Button Hovered](/assets/screenshots/hover-7.png)
 
 ## 2.2 Timer
 
 The timer is set to run backwards from 10 to 0 seconds. It renews itself everytime the next question button is clicked. It also stops whenever the user clicks on an option. When the timer runs out, the user would no longer be able to select an option. The timer is located on the upper right of the quiz page.
+
 ![Timer](/assets/screenshots/timer.png)
 
 ## 2.3 Option effects
 
 When the user hovers over an option, the bacckground-color of that option turns a pale yellow color.
+
 ![Option Hover](/assets/screenshots/hover-4.png)
 
 When the user clicks on a correct answer, the color of the words and border color will turn dark green and the background would turn a yellow-green color. An icon, a green circle with a tick inside would appear at the end of the statment.
+
 ![Option Correct](/assets/screenshots/correct-answer.png)
 
 When the user clicks on a wrong answer, the color of the words and border color will turn dark red and the background would turn a pink color. An icon, a red circle with a cross inside would appear at the end of the statment.
+
 ![Option Incorrect](/assets/screenshots/wrong-answer.png)
 
 ## 2.4 Results
@@ -154,18 +164,23 @@ When the user clicks on a wrong answer, the color of the words and border color 
 There are five different results that can pop up on the results page. The type of statement the user will get depends on the number of correct answers the user get right.
 
 If the user gets less than or equal to five questions correct, the statement below will show up.
+
 ![Statement 1](/assets/screenshots/result-1.png)
 
 If the user gets between six and ten questions (inclusive) correct, the statement below will show up.
+
 ![Statement 2](/assets/screenshots/result-2.png)
 
 If the user gets between eleven and fifteen questions (inclusive) correct, the statement below will show up.
+
 ![Statement 3](/assets/screenshots/result-3.png)
 
 If the user gets between sixteen and twenty questions (inclusive) correct, the statement below will show up.
+
 ![Statement 4](/assets/screenshots/result-4.png)
 
 If the user gets more than twenty questions correct, the statement below will show up.
+
 ![Statement 5](/assets/screenshots/result-5.png)
 
 # 3. Technology
@@ -305,6 +320,7 @@ This bug was corrected by giving priority to the 'tick' class by adding in more 
 
 ![First Bug](/assets/screenshots/bug-number-1.png)
 ![Second Bug](/assets/screenshots/bug-number-2.png)
+
 By changing the 'section' elements to 'div' elements, the first three warnings disappeared. 'Div' elements don't require headings. By removing the 'text="text/javascript"' statement from the script source, the last two errors was resolved.
 
 ## 5.2 Style.css file
@@ -314,6 +330,7 @@ No errors came up for this code in the validator.
 ## 5.3 Script.js file
 
 ![Third Bug](/assets/screenshots/bug-number-3.png)
+
 By placing the '+' signs that were initially at the front of lines 82, 83, 84 to the end of lines 82, 82, 83, the warning was resolved. The questions variable is stated and located in a separate javascript file on this respository and therefore that warning can be ignored.
 
 # 6. Deployment
