@@ -49,17 +49,24 @@ The following are also expected of this website:
 
 * Should be easy to use and accessable on all electronic appliances.
 * Should be visually appealing and contain the necessary information for the user regarding how the quiz works.
-* The wording of the questions should be easy to understand.
+* The questions should be written in simple English.
 * The amount of time remaining to answer each question should be clearly visible.
-* 
+* Should clearly show whether the user's selection is right or wrong.
+* The question number the user is on should be clearly labeled.
 
 ## 1.3 Color Scheme and Font
 
 [Return to the Table of Contents](#table-of-contents)
 ### 1.3.1 Colors
 
+The color scheme of this website are warm colors. This is designed to draw in first-time users and to leave an impression on users who have already visited the website. The initial picture of a hot air balloon is set in a sunset background. This is then folloed by two background images of autumn colors - the warm, orange color of autumn leaves and solden sunshine. The final background image appears when the results come out. It is the image of fireworks, a display that is usually watched by families and friends together. This is held in stark contrast from the white 'boxes' that the questions, options, information and results appear in. But this makes the actual content of the website stand out and overall the effects of the color scheme enhances the user's experience of the website.
 
 ### 1.3.2 Fonts
+
+The fonts I used are the default font-family, the font-family 'Lobster' and the font-family 'Noto+Serif+HK'. I chose the 'Lobster' family to liven up the heading on the main-page where the website is. The font-family 'Noto+Serif+HK' is used to make the information section appear more 'professional'. The two families are shown below.
+
+![Lobster](/assets/screenshots/font-1.png)
+![Noto+Serif+HK](/assets/screenshots/font-2.png)
 
 ## 1.4 Visual Images
 
