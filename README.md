@@ -269,7 +269,7 @@ The performance of my website is pretty good on the desktop browser. this can be
 
 ### 4.1.7 Website Analysis on a Mobile using Lighthouse
 
-The performance of my website is mediocre on the mobile version. By reduciing the size of the background images, the performance would definitely increase.
+The performance of my website is mediocre on the mobile version. By reducing the size of the background images, the performance would definitely increase.
 
 ![Lighthouse 2](/assets/screenshots/lighthouse-mobile.png)
 
