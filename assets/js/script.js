@@ -179,7 +179,7 @@ leaveButton.onclick = function() {
     results.classList.remove('activeResults');
     heading.classList.remove("main-heading-remove");
     initialInformation.classList.remove("provocation-none");
-    color.classList.remove("color");
+    color.classList.remove("firework-background");
     queCount = 0;
     quesNumber = 1;
     rightAnswer = 0;
@@ -190,6 +190,8 @@ leaveButton.onclick = function() {
 restartButton.onclick = function() {
     results.classList.remove('activeResults');
     information.classList.add("activeInfo");
+    color.classList.remove("firework-background");
+    color.classList.add("background");
     queCount = 0;
     quesNumber = 1;
     rightAnswer = 0;

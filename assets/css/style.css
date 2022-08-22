@@ -427,9 +427,14 @@ accept button is pressed and the results button to pop up when the final answer 
     #information, #quiz, #results{
         width:100%;
         padding:0;
+        top:55%;
     }
     
     /*Styling the information section.*/
+
+    #information {
+        font-size: 1.5em;
+    }
 
     .title {
         font-size:1em;
