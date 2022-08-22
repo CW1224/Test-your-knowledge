@@ -159,6 +159,8 @@ When the user clicks on a wrong answer, the color of the words and border color 
 
 * [MD](https://en.wikipedia.org/wiki/Markdown) (Markdown) was used to create this readme file.
 
+* [JS](https://en.wikipedia.org/wiki/JavaScript)(JavaScript) was used to make the website responsive to the user.
+
 * [Invision](https://www.invisionapp.com/) was used to create the template for my web pages. 
 
 * [Google Fonts](https://fonts.google.com/) was used to import the font style for my project.
@@ -171,7 +173,7 @@ When the user clicks on a wrong answer, the color of the words and border color 
 
 * [Slack](https://slack.com/intl/en-ie/) was used for communications when I was having trouble creating code.
 
-* [W3C Markup](https://validator.w3.org/),[Jigsaw validation](https://jigsaw.w3.org/) and [Jshint](https://jshint.com/)tools were used to check for bugs in my code.
+* [W3C Markup](https://validator.w3.org/),[Jigsaw validation](https://jigsaw.w3.org/) and [JSHint](https://jshint.com/) tools were used to check for bugs in my code.
 
 * [Font Awesome](https://fontawesome.com/) was used to allow an icon to be added in.
 
@@ -216,11 +218,15 @@ I used the "Inspect" command on google chrome to check how responsive my website
 
 [W3C Markup](https://validator.w3.org/) was used to validate the html codes of my project. It was used to check if any errors were available and I had to correct them before continuing onto the next step. The image below had to be shown in order to confirm that there is no error in my project.
 
-![Confirmation-HTML]
+![Confirmation-HTML](/assets/screenshots/document-check-1.png)
 
 [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check that all the code written in css were correct. The image below tells me that there are no errors present in my code.
 
-![Confirmation-CSS]
+![Confirmation-CSS](/assets/screenshots/document-check-2.png)
+
+[JSHint](https://jshint.com/) was used to check for errors in my javascript code. The image below indicates that there is no major error.
+
+![Confirmation-JS](/assets/screenshots/document-check-3.png)
 
 # 5. Bugs
 
