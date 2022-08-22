@@ -149,6 +149,25 @@ When the user clicks on a correct answer, the color of the words and border colo
 When the user clicks on a wrong answer, the color of the words and border color will turn dark red and the background would turn a pink color. An icon, a red circle with a cross inside would appear at the end of the statment.
 ![Option Incorrect](/assets/screenshots/wrong-answer.png)
 
+## 2.4 Results
+
+There are five different results that can pop up on the results page. The type of statement the user will get depends on the number of correct answers the user get right.
+
+If the user gets less than or equal to five questions correct, the statement below will show up.
+![Statement 1](/assets/screenshots/result-1.png)
+
+If the user gets between six and ten questions (inclusive) correct, the statement below will show up.
+![Statement 2](/assets/screenshots/result-2.png)
+
+If the user gets between eleven and fifteen questions (inclusive) correct, the statement below will show up.
+![Statement 3](/assets/screenshots/result-3.png)
+
+If the user gets between sixteen and twenty questions (inclusive) correct, the statement below will show up.
+![Statement 4](/assets/screenshots/result-4.png)
+
+If the user gets more than twenty questions correct, the statement below will show up.
+![Statement 5](/assets/screenshots/result-5.png)
+
 # 3. Technology
 
 [Return to the Table of Contents](#table-of-contents)
@@ -191,7 +210,13 @@ TEST            | OUTCOME                          | PASS / FAIL
 
 ### 4.1.4 Website Analysis on a Desktop using Lighthouse
 
+The performance of my website is pretty good on the desktop browser.
+![Lighthouse 1](/assets/screenshots/lighthouse-desktop.png)
+
 ### 4.1.5 Website Analysis on a Mobile using Lighthouse
+
+The performance of my website is pretty good on the desktop browser.
+![Lighthouse 2](/assets/screenshots/lighthouse-mobile.png)
 
 ## 4.2 Testing with Tools
 
@@ -232,7 +257,25 @@ I used the "Inspect" command on google chrome to check how responsive my website
 
 [Return to the Table of Contents](#table-of-contents)
 
+Initially the color background for the wrong and correct answers aren't working.
+The problem was that the priority in the css was wrong.
+More priority was given to the black border and the white background in the css style above.
+This bug was corrected by giving priority to the 'tick' class by adding in more classes.
+
 ## 5.1 Index.html file
+
+![First Bug](/assets/screenshots/bug-number-1.png)
+![Second Bug](/assets/screenshots/bug-number-2.png)
+By changing the 'section' elements to 'div' elements, the first three warnings disappeared. 'Div' elements don't require headings. By removing the 'text="text/javascript"' statement from the script source, the last two errors was resolved.
+
+## 5.2 Style.css file
+
+No errors came up for this code in the validator.
+
+## 5.3 Script.js file
+
+![Third Bug](/assets/screenshots/bug-number-3.png)
+By placing the '+' signs that were initially at the front of lines 82, 83, 84 to the end of lines 82, 82, 83, the warning was resolved. The questions variable is stated and located in a separate javascript file on this respository and therefore that warning can be ignored.
 
 # 6. Deployment
 
@@ -252,9 +295,29 @@ The site was deployed to Github using the following steps:
 
 ## Desktop Version of my Project
 
+This is the desktop version of the website.
+
+![Result 1](/assets/screenshots/webpage-1.png)
+![Result 2](/assets/screenshots/webpage-2.png)
+![Result 3](/assets/screenshots/webpage-3.png)
+![Result 4](/assets/screenshots/webpage-4.png)
+![Result 5](/assets/screenshots/webpage-5.png)
+
 ## Mobile Version of my Project
 
+This is the mobile version of the website.
+
+![Result 6](/assets/screenshots/mobile-1.png)
+![Result 7](/assets/screenshots/mobile-2.png)
+![Result 8](/assets/screenshots/mobile-3.png)
+![Result 9](/assets/screenshots/mobile-4.png)
+![Result 10](/assets/screenshots/mobile-5.png)
+
 # 8. Improvements
+
+* The hover effect on the mobile app should be removed so that the background-color of the option would turn green or red depending on whether the answer is correct or not instead of turning yellow and then turning its corresponding color on the second click.
+* The background image of each question can be different.
+* The timer should not have a lag when the next question button is pressed. It should immediately be 10 istead of staying on the time it was before for a second before changing.
 
 # 9. Acknowledgements
 
@@ -270,10 +333,3 @@ The site was deployed to Github using the following steps:
 * The icons; fa-solid fa-circle-check, fa-solid fa-circle-xmark and fa-solid fa-ranking-star came from Font Awesome.
 * The ideas and code I implemented into this project were taught to me by Code Institute.
 * My mentor Marcel Mulders supported me throughout the whole project. I couldn't have done it without his help.
-
-Initially the color background for the wrong and correct answers aren't working.
-The problem was that the priority in the css was wrong.
-More priority was given to the black border and the white background in the css style above.
-This bug was corrected by giving priority to the 'tick' class by adding in more classes.
-
-By changing the 'section' elements to 'div' elements, the first three warnings disappeared. 'Div' elements don't require headings. By removing the 'text="text/javascript"' statement from the script source, the last two errors was resolved.
