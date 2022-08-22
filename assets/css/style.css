@@ -157,7 +157,6 @@ h1 {
 #quiz.quiz-active {
     opacity:1;
     pointer-events: auto;
-    transition-duration: 1s;
 }
 
 /*Styling the quiz box, this includes both the questions and the answers.*/
@@ -277,6 +276,7 @@ h1 {
 }
 
 #quiz footer #next-que {
+    display: none;
     font-size: 1.5em;
     padding: 10px;
     cursor: pointer;
@@ -294,6 +294,7 @@ h1 {
     text-align: center;
     align-items: center;
     flex-direction: column;
+    display: none;
 }
 
 #results .congrats {
@@ -351,8 +352,4 @@ h1 {
 
 #results #press #quit-quiz:hover {
     background-color: aquamarine;
-}
-
-#red {
-    display: none;
 }

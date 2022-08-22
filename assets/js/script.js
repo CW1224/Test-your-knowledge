@@ -6,8 +6,10 @@ const information = document.getElementById('information');
 const exitButton = document.getElementById('exit-quiz');
 const initiateButton = document.getElementById('begin-quiz');
 const quiz = document.getElementById('quiz');
+let nextButton = document.getElementById('next-que');
 let choices = document.getElementById('option-list');
 const option = document.getElementsByClassName('option')
+const countdownEl = document.getElementById('count-down');
 
 //This is the code that will bring the user to the quiz information page after pressing the start button.
 startButton.onclick = function() {
@@ -28,6 +30,7 @@ initiateButton.onclick = function() {
     information.classList.remove("activeInfo"); //removes the information section
     quiz.classList.add('quiz-active');
     showQuestions(0);
+    updateCountdown(9);
 }
 
 //Adding in the code to give question and answer options.
@@ -35,7 +38,8 @@ initiateButton.onclick = function() {
 let queCount = 0;
 let quesNumber = 1;
 let rightAnswer = 0;
-let nextButton = document.getElementById('next-que');
+let counter;
+let timeValue = 10;
 
 //When the next button on the quiz is clicked, the following question should appear.
 
@@ -46,6 +50,10 @@ nextButton.onclick = function() {
         let quesNum = document.getElementById('total-question');
         let quesText = '<span><p>' + quesNumber + ' Of 5' + '</p></span>';
         quesNum.innerHTML = quesText;
+        //Renewing the countdown timer, everytime it is pressed.
+        clearInterval(counter);
+        updateCountdown(timeValue);
+        nextButton.style.display = 'none';
 
         queCount++;
         showQuestions(queCount);
@@ -74,10 +82,11 @@ function showQuestions(index) {
 let checkIcon = '<div class="icon-tick"><i class="fa-solid fa-circle-check"></i></div>';
 let crossIcon = '<div class="icon-cross"><i class="fa-solid fa-circle-xmark"></i></div>';
 
+let allOptions = option.length;
+
 function optionSelected(correctAns) {
     let userAns = correctAns.textContent;
     let correctAnswer = questions[queCount].correctAns;
-    let allOptions = option.length;
     if (userAns == correctAnswer) {
         rightAnswer++;
         correctAns.classList.add ('tick');
@@ -94,30 +103,31 @@ function optionSelected(correctAns) {
 
     for (let i = 0; i < allOptions; i++) {
         option[i].classList.add('disabled');
+        clearInterval(counter);
+        nextButton.style.display = 'block';
     }
 }
 
 //This is the code for the countdown timer. The timer counts down from 10 to 0 seconds with the milliseconds showing.
+//The milliseconds takes the user's attention away from the quiz itself so it would be removed. This was based on a youtube channel.
 
-const startingSeconds = 10;
-let time = startingSeconds * 100;
+function updateCountdown(time) {
 
-const countdownEl = document.getElementById('count-down');
-
-setInterval(updateCountdown,10);
-
-function updateCountdown() {
-
-    const seconds = Math.floor(time/100);
-    let milliseconds = time % 100;
-
-    milliseconds = milliseconds < 10 ? '0' + milliseconds : milliseconds;
-
-    countdownEl.innerHTML = `${seconds}: ${milliseconds}`;
-    if (time > 0) {
+    counter = setInterval(timer,1000);
+    function timer() {
+        countdownEl.textContent = time;
         time--;
-    }
-    else {
-    countdownEl.innerHTML = "Time Over";
+        if (time < 0) {
+            clearInterval(counter);
+            countdownEl.textContent = "00";
+            for (let i = 0; i < allOptions; i++) {
+                option[i].classList.add('disabled');
+                nextButton.style.display = 'block';
+            }
+        } else if (time < 9) {
+            let addZero = countdownEl.textContent;
+            countdownEl.textContent = '0' + addZero;
+        }
+
     }
 }
