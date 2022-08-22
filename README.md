@@ -44,12 +44,13 @@ My goal in creating this website is to broaden people's horizon. I want to eithe
 
 [Return to the Table of Contents](#table-of-contents)
 
-The following are expected of this website:
+The website should contain the quiz questions and options for the user to select an answer from. At the end of the quiz, the user should be able to get a feedback from the website regarding their overall score. 
+The following are also expected of this website:
 
 * Should be easy to use and accessable on all electronic appliances.
-* Should be visually appealing and contain the necessary information for the user.
-* 
-* 
+* Should be visually appealing and contain the necessary information for the user regarding how the quiz works.
+* The wording of the questions should be easy to understand.
+* The amount of time remaining to answer each question should be clearly visible.
 * 
 
 ## 1.3 Color Scheme and Font
