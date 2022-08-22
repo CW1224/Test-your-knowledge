@@ -72,21 +72,82 @@ The fonts I used are the default font-family, the font-family 'Lobster' and the 
 
 [Return to the Table of Contents](#table-of-contents)
 
-I used pixabay as my main source of image gathering for my project. 
+I used pixabay as my main source of image gathering for my project. The initial background-image, the background-images of the information section, of the quiz section and of the results section all increased the quality of the website and made it more appealing to the eye.
 
 ## 1.5 Skeleton Framework
 
 [Return to the Table of Contents](#table-of-contents)
 
-Invision was used to create the webframe and to brainstorm my ideas. I created four altogether, two for the webpage and two for an iphone screen.
+Invision was used to create the webframe and to brainstorm my ideas. I created eight altogether, four for the webpage and four for an iphone screen.
 
-### 1.5.1 Front Page
+### 1.5.1 Initial Page
 
 [Return to the Table of Contents](#table-of-contents)
+
+![Link to mobile version of initial page](/assets/screenshots/mobile-template-1.png)
+![Link to webpage version of initial page](/assets/screenshots/web-template-1.png)
+
+### 1.5.2 Information Page
+
+[Return to the Table of Contents](#table-of-contents)
+
+![Link to mobile version of information page](/assets/screenshots/mobile-template-2.png)
+![Link to webpage version of information page](/assets/screenshots/web-template-2.png)
+
+### 1.5.3 Quiz Page
+
+[Return to the Table of Contents](#table-of-contents)
+
+![Link to mobile version of quiz page](/assets/screenshots/mobile-template-3.png)
+![Link to webpage version of quiz page](/assets/screenshots/web-template-3.png)
+
+### 1.5.4 Results Page
+
+[Return to the Table of Contents](#table-of-contents)
+
+![Link to mobile version of results page](/assets/screenshots/mobile-template-4.png)
+![Link to webpage version of results page](/assets/screenshots/web-template-4.png)
 
 # 2. Features
 
 [Return to the Table of Contents](#table-of-contents)
+
+## 2.1 Buttons 
+
+The buttons on each section are similar in their uses and design. They are used to bring the user to different sections of the quiz.
+The first button as seen below brings the user to the information page. When hovered over, it turns orange in color.
+![Start Button Hovered](/assets/screenshots/hover-1.png)
+
+The accept challenge button on the information page as seen below brings the user to the first question on the quiz page. When hovered over, it turns green in color.
+![Accept Challenge Button Hovered](/assets/screenshots/hover-2.png)
+
+The exit button on the information page as seen below brings the user back to the initial page. When hovered over, it turns red in color.
+![Exit Button Hovered](/assets/screenshots/hover-3.png)
+
+The next button on each of the questions of the quiz page as seen below brings the user to the following question. When hovered over, it turns a yellow-green color.
+![Next Button Hovered](/assets/screenshots/hover-5.png)
+
+The restart quiz button on the results page as seen below brings the user back to the information page. When hovered over, it turns green in color.
+![Restart Button Hovered](/assets/screenshots/hover-6.png)
+
+The leave button on the results page as seen below brings the user to the information page. When hovered over, it turns red in color.
+![Leave Button Hovered](/assets/screenshots/hover-7.png)
+
+## 2.2 Timer
+
+The timer is set to run backwards from 10 to 0 seconds. It renews itself everytime the next question button is clicked. It also stops whenever the user clicks on an option. When the timer runs out, the user would no longer be able to select an option. The timer is located on the upper right of the quiz page.
+![Timer](/assets/screenshots/timer.png)
+
+## 2.3 Option effects
+
+When the user hovers over an option, the bacckground-color of that option turns a pale yellow color.
+![Option Hover](/assets/screenshots/hover-4.png)
+
+When the user clicks on a correct answer, the color of the words and border color will turn dark green and the background would turn a yellow-green color. An icon, a green circle with a tick inside would appear at the end of the statment.
+![Option Correct](/assets/screenshots/correct-answer.png)
+
+When the user clicks on a wrong answer, the color of the words and border color will turn dark red and the background would turn a pink color. An icon, a red circle with a cross inside would appear at the end of the statment.
+![Option Incorrect](/assets/screenshots/wrong-answer.png)
 
 # 3. Technology
 
