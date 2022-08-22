@@ -79,10 +79,10 @@ nextButton.onclick = function() {
 function showQuestions(index) {
     let queTitle = document.getElementById('question');
     let queTag = '<span>' + questions[index].number + '. ' + questions[index].question + '</span>';
-    let optionList = '<div class="option"><span>' + questions[index].options[0] + '</span></div>'
-                + '<div class="option"><span>' + questions[index].options[1] + '</span></div>' 
-                + '<div class="option"><span>' + questions[index].options[2] + '</span></div>'
-                + '<div class="option"><span>' + questions[index].options[3] + '</span></div>';
+    let optionList = '<div class="option"><span>' + questions[index].options[0] + '</span></div>' +
+                 '<div class="option"><span>' + questions[index].options[1] + '</span></div>' +
+                 '<div class="option"><span>' + questions[index].options[2] + '</span></div>' +
+                 '<div class="option"><span>' + questions[index].options[3] + '</span></div>';
     queTitle.innerHTML = queTag;
     choices.innerHTML = optionList;
 
