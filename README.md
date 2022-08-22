@@ -6,7 +6,7 @@ Welcome to the readme file of my project.
 
 This website is designed to test users on their general knowledge. The types of questions range from geographical locations and landmarks to historical people and famous events. By completing this quiz, users would be able to broaden their perspective of the world.
 
-You can find a link to my website [here]()
+You can find a link to my website [here](https://cw1224.github.io/Test-your-knowledge/)
 
 # Table of Contents
 [1.User Experience(UX)](#1-user-experience)
@@ -328,7 +328,7 @@ The site was deployed to Github using the following steps:
 - Select pages on the left menu bar.
 - Click on the main branch and save it.
 - This will generate a live link in which your website can be found.
-- The link to my website can be found [here].
+- The link to my website can be found [here](https://cw1224.github.io/Test-your-knowledge/).
 
 # 7. Project Completion
 
