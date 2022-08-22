@@ -47,6 +47,8 @@ exitButton.onclick = function() {
 initiateButton.onclick = function() {
     information.classList.remove("activeInfo"); //removes the information section
     quiz.classList.add('activeQuiz');
+    color.classList.remove("color");
+    color.classList.add("background");
     showQuestions(0);
     updateCountdown(9);
     quesText = '<span><p>' + quesNumber + ' Of 25' + '</p></span>';
@@ -150,6 +152,8 @@ function updateCountdown(time) {
 function showResults() {
     quiz.classList.remove('activeQuiz');
     results.classList.add('activeResults');
+    color.classList.remove("background");
+    color.classList.add("firework-background");
 
     //This code will display a different message on the user's final screen depending on the number of answers they answered correctly.
 

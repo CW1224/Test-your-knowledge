@@ -5,7 +5,15 @@ body{
 }
 
 body.color{
-    background-color: rgb(248, 204, 83);
+    background: url(../images/fall.jpg);
+}
+
+body.background {
+    background: url(../images/autumn.jpg);
+}
+
+body.firework-background {
+    background: url(../images/fireworks.jpg);
 }
 
 header {
