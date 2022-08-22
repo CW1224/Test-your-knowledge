@@ -10,6 +10,9 @@ let nextButton = document.getElementById('next-que');
 let choices = document.getElementById('option-list');
 const option = document.getElementsByClassName('option')
 const countdownEl = document.getElementById('count-down');
+const results = document.getElementById('results');
+const restartButton = document.getElementById('restart-quiz');
+const leaveButton = document.getElementById('quit-quiz');
 
 //This is the code that will bring the user to the quiz information page after pressing the start button.
 startButton.onclick = function() {
@@ -28,10 +31,14 @@ exitButton.onclick = function() {
 //This is the code that would bring the user to the first question of the quiz when pressed.
 initiateButton.onclick = function() {
     information.classList.remove("activeInfo"); //removes the information section
-    quiz.classList.add('quiz-active');
+    quiz.classList.add('activeInfo');
     showQuestions(0);
     updateCountdown(9);
 }
+
+//This is the code that would show the user his/her results.
+
+
 
 //Adding in the code to give question and answer options.
 
@@ -59,6 +66,7 @@ nextButton.onclick = function() {
         showQuestions(queCount);
     } else {
         console.log('Quiz complete');
+        showResults();
     }
 }
 
@@ -120,6 +128,7 @@ function updateCountdown(time) {
         if (time < 0) {
             clearInterval(counter);
             countdownEl.textContent = "00";
+            //Once the timer runs out, the user would no longer be able to pick an answer.
             for (let i = 0; i < allOptions; i++) {
                 option[i].classList.add('disabled');
                 nextButton.style.display = 'block';
@@ -131,3 +140,5 @@ function updateCountdown(time) {
 
     }
 }
+
+//The results section

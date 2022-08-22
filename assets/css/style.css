@@ -71,7 +71,10 @@ h1 {
     width:50%;
 }
 
-#information.activeInfo {
+/*The code below would allow the information to pop up when the start button is pressed, the quiz question to pop up when
+accept button is pressed and the results button to pop up when the final answer is anaswered.*/
+
+#information.activeInfo, #results.activeInfo, #quiz.activeInfo {
     opacity:1;
     pointer-events: auto;
     transition-duration: 1s;
@@ -153,12 +156,6 @@ h1 {
     color: black;
 }
 
-/*The code below would allow the quiz questions to appear upon pressing the accept the challenge button.*/
-#quiz.quiz-active {
-    opacity:1;
-    pointer-events: auto;
-}
-
 /*Styling the quiz box, this includes both the questions and the answers.*/
 
 #quiz {
@@ -215,7 +212,7 @@ h1 {
     text-align: center;
 }
 
-/*Styling the answers.*/
+/*Styling the answers. The correct answer and wrong answer wil display a different style.*/
 
 #quiz .question-and-text #option-list {
     font-size: 1.5em;
