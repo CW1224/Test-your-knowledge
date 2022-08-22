@@ -10,7 +10,7 @@ const quiz = document.getElementById('quiz');
 let quesNum = document.getElementById('total-question');
 let nextButton = document.getElementById('next-que');
 let choices = document.getElementById('option-list');
-const option = document.getElementsByClassName('option')
+const option = document.getElementsByClassName('option');
 const countdownEl = document.getElementById('count-down');
 const results = document.getElementById('results');
 let finalMessage = document.getElementById('final-message');
@@ -33,7 +33,7 @@ startButton.onclick = function() {
     heading.classList.add("main-heading-remove");
     initialInformation.classList.add("provocation-none");
     color.classList.add("color");
-}
+};
 
 //This is the code that would bring the user back to the initial page of the website.
 exitButton.onclick = function() {
@@ -41,7 +41,7 @@ exitButton.onclick = function() {
     heading.classList.remove("main-heading-remove");
     initialInformation.classList.remove("provocation-none");
     color.classList.remove("color");
-}
+};
 
 //This is the code that would bring the user to the first question of the quiz when pressed.
 initiateButton.onclick = function() {
@@ -53,7 +53,7 @@ initiateButton.onclick = function() {
     updateCountdown(9);
     quesText = '<span><p>' + quesNumber + ' Of 25' + '</p></span>';
     quesNum.innerHTML = quesText;
-}
+};
 
 //When the next button on the quiz is clicked, the following question should appear.
 
@@ -105,12 +105,12 @@ function optionSelected(correctAns) {
         rightAnswer++;
         correctAns.classList.add ('tick');
         correctAns.insertAdjacentHTML("beforeend", checkIcon);
-        console.log("Well done")
+        console.log("Well done");
         console.log(rightAnswer);
     } else {
         correctAns.classList.add ('cross');
         correctAns.insertAdjacentHTML("beforeend", crossIcon);
-        console.log("Too bad")
+        console.log("Too bad");
     }
 
     //This is the code that will prevent the user from picking any other question once an answer is picked.
@@ -183,7 +183,7 @@ leaveButton.onclick = function() {
     queCount = 0;
     quesNumber = 1;
     rightAnswer = 0;
-}
+};
 
 //This is the code that would allow the user to redo the quiz upon clicking.
 
@@ -195,4 +195,4 @@ restartButton.onclick = function() {
     queCount = 0;
     quesNumber = 1;
     rightAnswer = 0;
-}
+};
