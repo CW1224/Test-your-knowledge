@@ -4,6 +4,10 @@ body{
     margin:0;
 }
 
+body.color{
+    background-color: rgb(53, 198, 238);
+}
+
 header {
     margin:0;
     padding:0;

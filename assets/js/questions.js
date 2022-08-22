@@ -55,5 +55,226 @@ let questions = [
             "Philiip",
             "Ryan"
         ]
-    }
+    },
+    {
+        number:6,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:7,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:8,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:9,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:10,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:11,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:12,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:13,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:14,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:15,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:16,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:17,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:18,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:19,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:20,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:21,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:22,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:23,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:24,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+    {
+        number:25,
+        question:"How much is in a baker's dozen?",
+        correctAns:13,
+        options: [
+            13,
+            15,
+            16,
+            12
+        ]
+    },
+
 ]

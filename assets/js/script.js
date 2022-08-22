@@ -2,6 +2,7 @@
 let heading = document.getElementById('main-heading');
 let initialInformation = document.getElementById('provocation');
 const startButton = document.getElementById('start-quiz');
+let color = document.getElementById('color');
 const information = document.getElementById('information');
 const exitButton = document.getElementById('exit-quiz');
 const initiateButton = document.getElementById('begin-quiz');
@@ -31,6 +32,7 @@ startButton.onclick = function() {
     information.classList.add("activeInfo");
     heading.classList.add("main-heading-remove");
     initialInformation.classList.add("provocation-none");
+    color.classList.add("color");
 }
 
 //This is the code that would bring the user back to the initial page of the website.
@@ -38,6 +40,7 @@ exitButton.onclick = function() {
     information.classList.remove("activeInfo");
     heading.classList.remove("main-heading-remove");
     initialInformation.classList.remove("provocation-none");
+    color.classList.remove("color");
 }
 
 //This is the code that would bring the user to the first question of the quiz when pressed.
@@ -46,7 +49,7 @@ initiateButton.onclick = function() {
     quiz.classList.add('activeQuiz');
     showQuestions(0);
     updateCountdown(9);
-    quesText = '<span><p>' + quesNumber + ' Of 5' + '</p></span>';
+    quesText = '<span><p>' + quesNumber + ' Of 25' + '</p></span>';
     quesNum.innerHTML = quesText;
 }
 
@@ -56,7 +59,7 @@ nextButton.onclick = function() {
     if (queCount < questions.length - 1 ){
         //Increasing the number on the footer of the quiz page as the next question button is pressed.
         quesNumber++;
-        quesText = '<span><p>' + quesNumber + ' Of 5' + '</p></span>';
+        quesText = '<span><p>' + quesNumber + ' Of 25' + '</p></span>';
         quesNum.innerHTML = quesText;
         //Renewing the countdown timer, everytime it is pressed.
         clearInterval(counter);
@@ -150,19 +153,19 @@ function showResults() {
 
     //This code will display a different message on the user's final screen depending on the number of answers they answered correctly.
 
-    if (rightAnswer < 2) {
+    if (rightAnswer < 6) {
         finalMessage.innerHTML = 'Uhm... You should take a look at the world outside.';
-    } else if (rightAnswer < 3) {
+    } else if (rightAnswer < 11) {
         finalMessage.innerHTML = "Mediocre! Widen up you're ";
-    } else if (rightAnswer < 4) {
+    } else if (rightAnswer < 16) {
         finalMessage.innerHTML = 'Really Good! However, you could do with a little more studying.';
-    } else if (rightAnswer < 5) {
+    } else if (rightAnswer < 21) {
         finalMessage.innerHTML = "Amazing! You're nearly there. ";
     } else {
         finalMessage.innerHTML = 'Excellent! Your knowledge of the world is incomparable.';
     }
 
-    let endResults ='<span>' + "You're score is" + '<p>' + rightAnswer +'</p>' + 'out of' + '<p>20</p></span>'; 
+    let endResults ='<span>' + "You're score is" + '<p>' + rightAnswer +'</p>' + 'out of' + '<p>25</p></span>'; 
     finalResults.innerHTML = endResults;
 }
 
@@ -172,6 +175,7 @@ leaveButton.onclick = function() {
     results.classList.remove('activeResults');
     heading.classList.remove("main-heading-remove");
     initialInformation.classList.remove("provocation-none");
+    color.classList.remove("color");
     queCount = 0;
     quesNumber = 1;
     rightAnswer = 0;
