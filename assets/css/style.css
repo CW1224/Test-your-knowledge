@@ -306,12 +306,11 @@ accept button is pressed and the results button to pop up when the final answer 
 }
 
 #result #final-message {
-    padding-bottom: 1em;
     font-size: 1.25em;
 }
 
 #results #score {
-    padding:0 0 1em;
+    padding:1em 0;
 }
 
 #results #score span {

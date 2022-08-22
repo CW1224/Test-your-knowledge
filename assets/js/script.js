@@ -6,14 +6,25 @@ const information = document.getElementById('information');
 const exitButton = document.getElementById('exit-quiz');
 const initiateButton = document.getElementById('begin-quiz');
 const quiz = document.getElementById('quiz');
+let quesNum = document.getElementById('total-question');
 let nextButton = document.getElementById('next-que');
 let choices = document.getElementById('option-list');
 const option = document.getElementsByClassName('option')
 const countdownEl = document.getElementById('count-down');
 const results = document.getElementById('results');
+let finalMessage = document.getElementById('final-message');
+let finalResults = document.getElementById('score');
 const restartButton = document.getElementById('restart-quiz');
 const leaveButton = document.getElementById('quit-quiz');
-let finalResults = document.getElementById('score');
+
+//Adding in the code to give question and answer options.
+
+let queCount = 0;
+let quesNumber = 1;
+let quesText;
+let rightAnswer = 0;
+let counter;
+let timeValue = 10;
 
 //This is the code that will bring the user to the quiz information page after pressing the start button.
 startButton.onclick = function() {
@@ -35,15 +46,9 @@ initiateButton.onclick = function() {
     quiz.classList.add('activeQuiz');
     showQuestions(0);
     updateCountdown(9);
+    quesText = '<span><p>' + quesNumber + ' Of 5' + '</p></span>';
+    quesNum.innerHTML = quesText;
 }
-
-//Adding in the code to give question and answer options.
-
-let queCount = 0;
-let quesNumber = 1;
-let rightAnswer = 0;
-let counter;
-let timeValue = 10;
 
 //When the next button on the quiz is clicked, the following question should appear.
 
@@ -51,8 +56,7 @@ nextButton.onclick = function() {
     if (queCount < questions.length - 1 ){
         //Increasing the number on the footer of the quiz page as the next question button is pressed.
         quesNumber++;
-        let quesNum = document.getElementById('total-question');
-        let quesText = '<span><p>' + quesNumber + ' Of 5' + '</p></span>';
+        quesText = '<span><p>' + quesNumber + ' Of 5' + '</p></span>';
         quesNum.innerHTML = quesText;
         //Renewing the countdown timer, everytime it is pressed.
         clearInterval(counter);
@@ -143,7 +147,20 @@ function updateCountdown(time) {
 function showResults() {
     quiz.classList.remove('activeQuiz');
     results.classList.add('activeResults');
-    let endResults ='<span>' + "You're score is" + '<p>' + rightAnswer +'</p>' + 'out of' + '<p>10</p></span>'; 
+
+    if (0 < rightAnswer < 3) {
+        finalMessage.innerHTML = 'Excellent! Your knowledge of the world is incomparable.';
+    } else if (0 < rightAnswer < 3) {
+        finalMessage.innerHTML = "Amazing! You're nearly there. ";
+    } else if (0 < rightAnswer < 3) {
+        finalMessage.innerHTML = 'Really Good! However, you could do with a little more studying.';
+    } else if (0 < rightAnswer < 3) {
+        finalMessage.innerHTML = "Mediocre! Widen up you're ";
+    } else {
+        finalMessage.innerHTML = 'Uhm... You should take a look at the world outside.';
+    }
+
+    let endResults ='<span>' + "You're score is" + '<p>' + rightAnswer +'</p>' + 'out of' + '<p>20</p></span>'; 
     finalResults.innerHTML = endResults;
 }
 
