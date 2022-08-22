@@ -4,7 +4,7 @@ let questions = [
     {
         number:1,
         question:"What is the tallest mountain in our solar system?",
-        correctAns:"Everest",
+        correctAns:"Olympus Mons",
         options: [
             "Mount Everest",
             "Carrauntoohil",
@@ -15,7 +15,7 @@ let questions = [
     {
         number:2,
         question:"How much is in a baker's dozen?",
-        correctAns:12,
+        correctAns:13,
         options: [
             13,
             15,
@@ -94,7 +94,7 @@ let questions = [
         question:"Which of the two gases caused the most deaths in World War 1?",
         correctAns:"Mustard Gas",
         options: [
-            "Mustart Gas",
+            "Mustard Gas",
             "Chlorine Gas",
             "Both",
             "Neither",
