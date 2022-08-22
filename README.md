@@ -208,26 +208,42 @@ If the user gets more than twenty questions correct, the statement below will sh
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Start Quiz Button | When clicked, brings user to information page. | Pass
+Exit Quiz Button | When clicked, brings user back to initial page. | Pass
+Accept Challenge Button | When clicked, brings user to the first question on the quiz page. | Pass
+Next Question Button | When clicked, brings user to the next question and correspomding options. | Pass
+Leave Quiz Button | When clicked, brings user back to initial page. | Pass
+Restart Quiz Button | When clicked, brings user back to information page. | Pass
 
 ### 4.1.2 Hover
 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
+Start Quiz Button | When hovered over, background-color of button turns orange. | Pass
+Exit Quiz Button | When hovered over, background-color of button turns red. | Pass
+Accept Challenge Button | When hovered over, background-color of button turns green. | Pass
+Next Question Button | When hovered over, background-color of button turns yellow-green. | Pass
+Leave Quiz Button | When hovered over, background-color of button turns red. | Pass
+Restart Quiz Button | When hovered over, background-color of button turns green. | Pass
 
 ### 4.1.3 Options Clicked
 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
+Correct Option Clicked | When correct option clicked, the background-color of option turns yellow-green, the border and words turn dark green and an icon, a green circle with a green tick appears at end of the clicked option. | Pass
+Incorrect Option Clicked | When an incorrect option is clicked, the background-color of option turns pink, the border and words turn red and an icon, a red circle with a red cross appears at end of the clicked option. | Pass
 
 ### 4.1.4 Timer
 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
+Timer Resets | When next question button is clicked, timer resets to 10. | Pass
+Timer Stops | When an option is clicked, the timer stops. | Pass
 
 ### 4.1.5 Results
 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
+Statement Changes Accordingly | Depending on the number of correct answers of the user, the statement, the user sees in the results box is different. | Pass
 
 ### 4.1.6 Website Analysis on a Desktop using Lighthouse
 
