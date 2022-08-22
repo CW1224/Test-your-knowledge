@@ -36,7 +36,7 @@ let questions = [
     },
     {
         number:4,
-        question:"What is the smallest particle within in an atom?",
+        question:"What is the smallest particle within an atom?",
         correctAns:'Electron',
         options: [
             "Proton",
