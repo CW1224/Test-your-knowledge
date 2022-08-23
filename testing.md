@@ -87,3 +87,5 @@ I used the "Inspect" command on google chrome to check how responsive my website
 [JSHint](https://jshint.com/) was used to check for errors in my javascript code. The image below indicates that there is no major error.
 
 ![Confirmation-JS](/assets/screenshots/document-check-3.png)
+
+Return to the original readme file, press this [button](readme.md).
