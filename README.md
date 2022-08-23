@@ -141,11 +141,15 @@ The leave button on the results page as seen below brings the user to the inform
 
 ## 2.2 Timer
 
+[Return to the Table of Contents](#table-of-contents)
+
 The timer is set to run backwards from 10 to 0 seconds. It renews itself everytime the next question button is clicked. It also stops whenever the user clicks on an option. When the timer runs out, the user would no longer be able to select an option. The timer is located on the upper right of the quiz page.
 
 ![Timer](/assets/screenshots/timer.png)
 
 ## 2.3 Option effects
+
+[Return to the Table of Contents](#table-of-contents)
 
 When the user hovers over an option, the bacckground-color of that option turns a pale yellow color.
 
@@ -160,6 +164,8 @@ When the user clicks on a wrong answer, the color of the words and border color 
 ![Option Incorrect](/assets/screenshots/wrong-answer.png)
 
 ## 2.4 Results
+
+[Return to the Table of Contents](#table-of-contents)
 
 There are five different results that can pop up on the results page. The type of statement the user will get depends on the number of correct answers the user get right.
 
